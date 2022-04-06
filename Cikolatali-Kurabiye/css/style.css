@@ -1,0 +1,30 @@
+body{
+    background-color:#E1CAAB;
+    width: 1500px;
+}
+
+section{
+    width: 60%;
+    float: right;
+}
+
+h1{
+    color: #682107;
+}
+
+
+#afiyet{
+    float: right;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#ozet{
+    color: #972D00;
+}
+
+.baslik1{
+    color: white;
+    background-color: #972D00;
+    border-radius: 25%;
+}
