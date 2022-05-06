@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.box-container {
+    min-height: 100vh;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.box-container .box {
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    box-shadow: 0 5px 5px #333;
+    overflow: hidden;
+    margin: 20px 15px;
+}
+
+.box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    filter: grayscale();
+}
+
+.box-container .box:hover img {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.box-container .box .info {
+    text-align: center;
+    background-color: white;
+    position: relative;
+    bottom: 50px;
+}
+
+.box-container .box:hover .info {
+    bottom: 128px;
+    filter: opacity(75%);
+    cursor:default;
+}
+
+.box-container .box .info h1 {
+    padding: 10px 0;
+    font-size: 20px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.box-container .box .info h3 {
+    font-size: 15px;
+    color: #999;
+}
+
+.box-container .box .info .social {
+    margin-top: 10px;
+    border-top: 1px solid #000;
+}
+
+.box-container .box .info .social a {
+    font-size: 20px;
+    margin: 20px 10px;
+    color: #333;
+}
+
+.box-container .box .info .social a:hover {
+    font-size: 20px;
+    margin: 20px 10px;
+    color: #333;
+    cursor: pointer;
+}
