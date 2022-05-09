@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Koulen', cursive;
+}
+
+p,
+li,
+button {
+    font-family: 'Radio Canada', sans-serif;
+}
+
+header {
+    background-color: #f7fafc;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+nav h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #03a9f4;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    margin-left: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    color: #03a9f4;
+}
+
+.banner {
+    padding: 80px 0;
+    padding-bottom: 128px;
+    text-align: center;
+    cursor: default;
+}
+
+.banner h1 {
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.banner span {
+    display: block;
+    color: #03a9f4;
+}
+
+.banner p {
+    font-size: 24px;
+    opacity: 0.4;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.banner button {
+    background-color: #03a9f4;
+    font-size: 18px;
+    padding: 16px 24px;
+    border: 0;
+    border-radius: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+
+.banner button:hover {
+    opacity: 0.9;
+}
+
+main {
+    padding: 64px 0;
+    background-color: white;
+    cursor: default;
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.top h2 {
+    font-size: 36px;
+}
+
+.top p {
+    font-size: 20px;
+    line-height: 36px;
+    opacity: 0.4;
+    margin-top: 16px;
+    padding: 0 90px;
+}
+
+.post {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 64px;
+}
+
+.col {
+    width: 50½;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 0 24px;
+}
+
+.col h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.col p {
+    font-size: 20px;
+    line-height: 36px;
+    opacity: 4;
+    margin-top: 24px;
+}
+
+col .img {
+    margin: 24px 18px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.post.reverse {
+    flex-direction: row-reverse;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+    background-color: #e6f6fe;
+    border-radius: 6px;
+}
+
+.cta p {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.cta span {
+    display: inline-block;
+    color: #03a9f4;
+    cursor: pointer;
+
+}
+
+.cta button {
+    background-color: #03a9f4;
+    font-size: 18px;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.cta button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7fafc;
+    padding: 64px 0;
+}
+
+footer ul {
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 16px;
+}
+
+footer ul li:hover {
+    opacity: 0.5;
+}
+
+footer .social {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer .social a {
+    font-size: 24px;
+    color: #4b4c4d;
+    margin: 0 4px;
+    opacity: 0.8;
+}
+
+footer .social a:hover {
+    color: #03a9f4;
+}
+
+footer p {
+    text-align: center;
+    opacity: 0.4;
+    cursor: default;
+}
+
+@media (max-width: 651px) {
+    .top p {
+        padding: 0;
+    }
+
+    .post {
+        flex-direction: column;
+    }
+
+    .post.reverse {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%
+    }
+
+    .cta {
+        padding: 16px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .cta p {
+        margin-bottom: 16px;
+    }
+
+
+}
